@@ -1,0 +1,82 @@
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 25px),
+    calc(100% - 25px) 100%,
+    25px 100%,
+    0% calc(100% - 25px)
+  );
+  z-index: 1000;
+}
+
+.nav-border {
+  position: absolute;
+  inset: 0;
+  background: #8ca4ac;
+  clip-path: inherit;
+  transform: scaleY(1.1);
+  transform-origin: center;
+  z-index: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 99%;
+  background: #eee;
+  clip-path: inherit;
+  display: flex;
+}
+
+.header-1 {
+  height: 100%;
+  width: 30%;
+  border-right: 1px solid #8ca4ac;
+}
+
+.header-2 {
+  height: 100%;
+  width: 40%;
+  border-right: 1px solid #8ca4ac;
+  display: flex;
+  justify-content: center;
+}
+
+.header-2 ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 50px;
+}
+.header-2 ul a {
+  color: black;
+  text-decoration: none;
+}
+.header-2 ul a:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+  color: #00c0e8;
+}
+.header-3 {
+  height: 100%;
+  width: 30%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  z-index: 20000;
+  object-fit: contain;
+}
